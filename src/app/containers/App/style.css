@@ -1,0 +1,12 @@
+ @media only screen and (max-width: 575px) {
+    .col-lg-4 {
+        display: none;
+    }
+} 
+
+ @media only screen and (min-width: 576px) {
+    .col-lg-4 {
+        display: none;
+    }
+} 
+
