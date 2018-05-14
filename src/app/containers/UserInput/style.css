@@ -6,3 +6,13 @@
         padding: 0 10px;
     }
 }
+
+@media only screen and (min-width: 576px) {
+    .input-holder {
+        position: fixed;
+        bottom: 30px;
+        left: 18vh;
+        padding: 0 10px;
+        width: 60%;
+    }
+}

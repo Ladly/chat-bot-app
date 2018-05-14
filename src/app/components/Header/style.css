@@ -1,0 +1,35 @@
+.header-holder {
+    display: flex;
+}
+
+.page-header {
+    margin: 10px 0;
+    justify-content: center;    
+}
+
+.page-header > img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.page-header > h1 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.chat-header {
+    justify-content: center;
+}
+
+.chat-header > img {
+    display: block;
+    width: 8px;
+    height: 8px;
+}
+
+.chat-header > h1 {
+    font-size: 5px;
+    margin: 0;
+}

@@ -11,7 +11,7 @@ export const LeftPanel = () => {
 			<div className="profile-svg-holder">  
 				<ProfileSvg />
 			</div> 
-			<div className="edit-svg-holder">   
+			<div className="edit-svg-holder float-right">   
 				<EditSvg />	
 			</div>
 		</Fragment>

@@ -26,7 +26,7 @@ class UserInput extends Component {
 				<div className="input-group-prepend">
 					<span className={`input-group-text border-primary ${this.displayActiveBg()}`}>{this.displayActive()}</span>
 				</div>
-				<input type="text" className="form-control border-primary" placeholder="Chat" />
+				<input type="text" className="form-control border-primary" placeholder="Type answer here..." />
 				<div className="input-group-append">
 					<span className="input-group-text bg-primary text-white border-primary">Send <span>&nbsp; &nbsp;</span> <PlaneSvg /></span>
 				</div>

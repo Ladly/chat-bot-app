@@ -1,14 +1,13 @@
 @media only screen and (min-width: 768px) {
     .profile-svg-holder {
-        width: inherit;
-    }
-    .profile-svg-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border:1px solid blue;
         border-radius: 50%;
-        width: 60%;
-        padding: 20px;
-        display: block;
-        margin: 20px auto;
+        width: 11vw;
+        height: 11vw;
+        margin-top: 15px;
     }
     .edit-svg-img {
         display: block;
