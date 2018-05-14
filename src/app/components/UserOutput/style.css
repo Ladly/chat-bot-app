@@ -47,3 +47,10 @@
         margin-right: 5px;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .user-output-header {
+        width: 4vw;
+        height: 4vw;
+    }
+}
