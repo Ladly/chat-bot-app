@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) {
+    .profile-svg-holder {
+        width: inherit;
+    }
+    .profile-svg-img {
+        border:1px solid blue;
+        border-radius: 50%;
+        width: 60%;
+        padding: 20px;
+        display: block;
+        margin: 20px auto;
+    }
+    .edit-svg-img {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .profile-svg-img {
+    width: 40%;
+    padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .profile-svg-img {
+    width: 30%;
+    padding: 30px;
+    }
+}

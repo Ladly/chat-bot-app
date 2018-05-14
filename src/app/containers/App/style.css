@@ -1,12 +1,26 @@
- @media only screen and (max-width: 575px) {
-    .col-lg-4 {
+@media only screen and (max-width: 575px) {
+    .left-panel, .right-panel {
         display: none;
     }
 } 
 
- @media only screen and (min-width: 576px) {
-    .col-lg-4 {
+@media only screen and (min-width: 576px) {
+    .left-panel, .right-panel {
         display: none;
     }
+} 
+
+@media only screen and (min-width: 768px) {
+    .left-panel, .right-panel {
+        display: flex;
+        height: 100vh;
+    }
+    .panel {
+        background-color: aliceblue;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    
 } 
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 
 import { LeftPanel } from './../../components/LeftPanel' 
+import { Footer } from './../../components/Footer' 
 
 import './style.css'
 
@@ -9,14 +10,15 @@ class App extends Component {
 	render() {
 		return (
 			<div className="container-fluid">
-				<div className="row">
-					<div className="col-lg-4">					
+				<div className="row no-gutters">
+					<div className="col-md-2 col-lg-3 left-panel panel">					
 						<LeftPanel />						
 					</div>
-					<div className="chat col-12">
+					<div className="chat col-12 col-md-8 col-lg-6">
 						<h1 className="text-center">Spartans</h1>
+						<Footer />
 					</div>
-					<aside className="col-lg-4"></aside>
+					<div className="col-md-2 col-lg-3 right-panel panel"></div>
 				</div>
 			</div>
 		)
