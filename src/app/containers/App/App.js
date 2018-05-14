@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import 'bootstrap/dist/css/bootstrap.css'
+
+import { socketConnect } from 'socket.io-react'
 
 import { LeftPanel } from './../../components/LeftPanel' 
 import { Footer } from './../../components/Footer' 
@@ -12,6 +16,37 @@ import { UserInput } from './../UserInput'
 import './style.css'
 
 class App extends Component {
+	state = {
+		messages: []
+	}
+	
+	componentDidMount() {
+		this.props.socket.on('bot message', msg => {
+			this.addMessage(msg)
+		})
+	}
+
+	addMessage = data => {
+		this.setState({messages: [...this.state.messages, data]})
+	}
+	
+	sendMessageToBot = (data) =>  {
+		const sendJSON = { text: data }
+		this.props.socket.emit('send message', sendJSON)
+		this.props.socket.on('bot message', msg => console.log(msg))
+	}
+
+	displayMessages = () => {
+		if(this.state.messages !== []) {
+			return this.state.messages.map((message, i) => {
+				if(i % 2 === 0) {
+					return <BotOutput key={i} text={message.message.text} options={message.message.options} />
+				} else {
+					return <UserOutput key={i} text={message} />
+				}
+			})
+		}
+	}
 	
 	render() {
 		return (
@@ -23,10 +58,9 @@ class App extends Component {
 					<div className="main-holder col-12 col-md-8 col-lg-6">
 						<Header pageHeader={true} logoType={true}/>
 						<div className="chat">
-							<BotOutput text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultrici'}/>
-							<UserOutput  text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultrici'}/>
+							{this.displayMessages()}
 						</div>
-						<UserInput />
+						<UserInput sendMessage={this.sendMessageToBot} addMessage={this.addMessage}/>
 						<Footer />
 					</div>
 					<div className="col-md-2 col-lg-3 right-panel panel"></div>
@@ -36,4 +70,8 @@ class App extends Component {
 	}
 }
 
-export default App
+App.propTypes = {
+	socket: PropTypes.object
+}
+
+export default socketConnect(App)

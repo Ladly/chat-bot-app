@@ -1,1 +1,1 @@
-export const URL = 'https://git.heroku.com/react-test-task-back.git'
+export const BOT_URL = 'https://react-test-task-back.herokuapp.com/'
