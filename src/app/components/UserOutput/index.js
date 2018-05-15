@@ -8,7 +8,7 @@ import './style.css'
 export const UserOutput = props => {
 	return (
 		<div className="user-output-holder">
-			<div className="text-container user-text">{props.text}</div>
+			<p className="text-container user-text">{props.text}</p>
 			<div className="user-output-header">
 				<JennaLogoSvg />
 			</div>

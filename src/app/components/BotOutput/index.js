@@ -20,11 +20,11 @@ export const BotOutput = (props) => {
 			<div className="output-header">
 				<Header pageHeader={false}/>
 			</div>
-			<div className="text-container bot-text">{props.text}</div>
 			<div>
-				{displayOptions()}
-			</div>			
-		</div>
+				<p className="text-container bot-text">{props.text}</p>
+				<p className="options-holder">{displayOptions()}</p>
+			</div>
+		</div>	
 	)
 }
 
