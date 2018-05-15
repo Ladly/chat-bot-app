@@ -1,7 +1,6 @@
 import React, { Component } from 'react' 
 import PropTypes from 'prop-types'
 
-import { PersistantInactiveSvg } from './../../components/Svg'
 import { PersistantActiveSvg } from './../../components/Svg'
 import { PlaneSvg } from './../../components/Svg'
 
@@ -11,15 +10,6 @@ class UserInput extends Component {
 	state = {
 		active: true,
 		inputValue: ''
-	}
-
-	/* next two function not in use atm but will stay here till i find a way to implement them  */
-	displayActive = () => {
-		return !this.state.active ? <PersistantInactiveSvg /> : <PersistantActiveSvg />
-	}
-
-	displayActiveBg = () => {
-		return this.state.active ? 'bg-white' : 'bg-primary'
 	}
 
 	handleChange = e => {
@@ -43,7 +33,7 @@ class UserInput extends Component {
 			<div className="main-input-holder">
 				<div className="input-group mb-3 input-holder">
 					<div className="input-group-prepend">
-						<span className={`input-group-text border-primary ${this.displayActiveBg()}`}>{this.displayActive()}</span>
+						<span className="input-group-text border-primary bg-white"><PersistantActiveSvg /></span>
 					</div>
 					<input type="text" onKeyPress={this.handleKeyPress} className="form-control border-primary" value={this.state.value} onChange={this.handleChange} placeholder="Type answer here..." />
 					<div className="input-group-append">

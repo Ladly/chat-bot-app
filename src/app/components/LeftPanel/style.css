@@ -1,5 +1,10 @@
 @media only screen and (min-width: 768px) {
-    .profile-svg-holder {
+    .flex-div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile-svg-holder { 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -9,19 +14,22 @@
         height: 11vw;
         margin-top: 15px;
     }
+
     .profile-svg-img {
         width: 30%;
     }
+
     .edit-svg-img {
-        display: block;
-    }
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    } 
 }
 
 @media only screen and (min-width: 992px) {
     .profile-svg-holder {
-        margin-right: 50px;
         width: 9vw;
-        height: 9vw;
+        height: 9vw; 
     }
     .profile-svg-img {
         width: 25%;
@@ -30,11 +38,7 @@
 
 @media only screen and (min-width: 1200px) {
     .profile-svg-holder {
-        margin-right: 7vw;
         width: 8vw;
-        height: 8vw;
-    }
-    .profile-svg-img {
-    width: 20%;
+        height: 8vw; 
     }
 }

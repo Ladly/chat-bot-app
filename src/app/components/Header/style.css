@@ -3,8 +3,8 @@
 }
 
 .page-header {
-    margin: 10px 0;
-    justify-content: center;    
+    justify-content: center;
+    background-color: white;    
 }
 
 .page-header > img {

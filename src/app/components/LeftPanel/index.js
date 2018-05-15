@@ -8,12 +8,15 @@ import './style.css'
 export const LeftPanel = () => {
 	return (
 		<Fragment>
-			<div className="profile-svg-holder">  
-				<ProfileSvg />
-			</div> 
 			<div className="edit-svg-holder float-right">   
 				<EditSvg />	
 			</div>
-		</Fragment>
+			<div className="flex-div">
+				<div className="profile-svg-holder">  
+					<ProfileSvg />
+				</div>
+			</div>
+		</Fragment> 
+
 	)
 }

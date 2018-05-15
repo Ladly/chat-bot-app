@@ -1,7 +1,7 @@
 @media only screen and (max-width: 575px) {
     .bot-output-holder {
         display: flex;
-        margin: 10px 0;
+        padding-top: 10px;
     }
 
     .output-header {
@@ -20,6 +20,10 @@
         padding: 5px;
         border: 1px solid lightgray;
         border-radius: 10px;
+    }
+
+    .text-container p {
+        background: pink;
     }
 
     .bot-text {
@@ -46,7 +50,8 @@
 @media only screen and (min-width: 576px) {
     .bot-output-holder {
         display: flex;
-        margin: 10px 0;
+        /* margin: 10px 0; */
+        padding-top: 15px;
     }
 
     .output-header {

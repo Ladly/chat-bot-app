@@ -1,30 +1,43 @@
 @media only screen and (max-width: 575px) {
-    .left-panel, .right-panel {
+    body {
+        background-color: white;
+    }
+
+    .panel {
         display: none;
     }
+
     .chat {
-        margin-bottom: 100px;
+        margin-bottom: 90px;
+        background: white;
     }
 } 
 
-@media only screen and (min-width: 576px) {
-    .left-panel, .right-panel {
+@media only screen and (min-width: 576px) {  
+    .panel {
         display: none;
+    }
+
+    .chat {
+        background: white;
+        margin-bottom: 90px;
     }
 } 
 
 @media only screen and (min-width: 768px) {
-    .left-panel, .right-panel {
-        display: flex;
-        height: 100vh;
-        justify-content: flex-end;
+    body {
+        background-color: aliceblue;
     }
+
+    .container-fluid {
+        padding: 0
+    }
+
     .panel {
+        display: block;
         background-color: aliceblue;
         z-index: 1;
-    }
-    .chat {
-        margin-bottom: 100px;
+        width: 100%;
     }
 } 
 
