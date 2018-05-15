@@ -10,6 +10,7 @@ import { Footer } from './../../components/Footer'
 import { Header } from './../../components/Header'
 import { BotOutput } from './../../components/BotOutput'
 import { UserOutput } from '../../components/UserOutput'
+import { Chat } from '../../components/Chat'
 
 import { UserInput } from './../UserInput'
 
@@ -55,14 +56,12 @@ class App extends Component {
 					<div className="col-md-2 col-lg-3 left-panel panel">					
 						<LeftPanel />						
 					</div>
-					<div className="main-holder col-12 col-md-8 col-lg-6">
+					<section className="main-holder col-12 col-md-8 col-lg-6">
 						<Header pageHeader={true} logoType={true}/>
-						<div className="chat">
-							{this.displayMessages()}
-						</div>
+						<Chat displayMessages={this.displayMessages} />
 						<UserInput sendMessage={this.sendMessageToBot} addMessage={this.addMessage}/>
 						<Footer />
-					</div>
+					</section>
 					<div className="col-md-2 col-lg-3 right-panel panel"></div>
 				</div>
 			</div>

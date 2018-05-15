@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
-import { EditSvg } from './../EditSvg'
-import { ProfileSvg } from './../ProfileSvg' 
+import { EditSvg } from './../Svg'
+import { ProfileSvg } from './../Svg' 
 
 import './style.css'
 

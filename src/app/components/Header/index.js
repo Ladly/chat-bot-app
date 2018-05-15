@@ -12,10 +12,10 @@ export const Header = props => {
 	}
 
 	return (
-		<div className={`header-holder ${headerType()}`}>
+		<header className={`header-holder ${headerType()}`}>
 			<img src={spartansLogo} alt="logo"/>
 			<h1>SPARTANS</h1>   
-		</div>
+		</header>
 	)
 }
 

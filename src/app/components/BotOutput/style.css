@@ -116,3 +116,10 @@
     }  
 }
 
+@media only screen and (min-width: 1920px) {
+    .output-header {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+

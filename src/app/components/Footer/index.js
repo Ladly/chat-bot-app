@@ -1,6 +1,6 @@
 import React from 'react' 
 
-import { JennaLogoSvg } from './../JennaLogoSvg'
+import { JennaLogoSvg } from './../Svg'
 
 import './style.css'
 

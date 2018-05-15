@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { JennaLogoSvg } from '../JennaLogoSvg'
+import { JennaLogoSvg } from './../Svg'
 
 import './style.css'
 

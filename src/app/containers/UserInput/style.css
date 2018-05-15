@@ -1,32 +1,44 @@
 @media only screen and (max-width: 575px) {
-    .input-holder {
+    .main-input-holder {
         position: fixed;
         bottom: 30px;
         left: 0;
         padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        padding-top: 10px;
     }
 }
 
 @media only screen and (min-width: 576px) {
-    .input-holder {
+    .main-input-holder {
         position: fixed;
         bottom: 30px;
-        left: 18vh;
+        left: 0;
         padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .input-holder {
         width: 60%;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .input-holder {
-        left: 32.5vh;
         width: 45%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .input-holder {
-        left: 54vh;
-        width: 35%;
+        width: 30%;
     }
 }

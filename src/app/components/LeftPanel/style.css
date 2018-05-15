@@ -20,6 +20,8 @@
 @media only screen and (min-width: 992px) {
     .profile-svg-holder {
         margin-right: 50px;
+        width: 9vw;
+        height: 9vw;
     }
     .profile-svg-img {
         width: 25%;
@@ -28,7 +30,9 @@
 
 @media only screen and (min-width: 1200px) {
     .profile-svg-holder {
-        margin-right: 75px;
+        margin-right: 7vw;
+        width: 8vw;
+        height: 8vw;
     }
     .profile-svg-img {
     width: 20%;

@@ -21,6 +21,7 @@
     }
     .panel {
         background-color: aliceblue;
+        z-index: 1;
     }
     .chat {
         margin-bottom: 100px;
