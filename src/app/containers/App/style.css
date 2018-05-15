@@ -20,15 +20,11 @@
 
     .chat {
         background: white;
-        margin-bottom: 90px;
+        margin-bottom: 90px; 
     }
 } 
 
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: aliceblue;
-    }
-
     .container-fluid {
         padding: 0
     }

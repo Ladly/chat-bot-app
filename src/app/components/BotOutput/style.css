@@ -50,7 +50,6 @@
 @media only screen and (min-width: 576px) {
     .bot-output-holder {
         display: flex;
-        /* margin: 10px 0; */
         padding-top: 15px;
     }
 
