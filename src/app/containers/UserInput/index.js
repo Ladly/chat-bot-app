@@ -20,12 +20,17 @@ class UserInput extends Component {
 	sendData = () => {		
 		this.props.sendMessage(this.state.inputValue)
 		this.props.addMessage(this.state.inputValue)
+		this.clearInput()
 	}
 
 	handleKeyPress = e => {
 		if(e.key === 'Enter') {
 			this.sendData()
 		}
+	}
+
+	clearInput = () => {
+		this.setState({inputValue: ''})
 	}
 
 	isInputEmpty = () => {
@@ -47,7 +52,7 @@ class UserInput extends Component {
 						type="text" 
 						onKeyPress={this.handleKeyPress} 
 						className="form-control border-primary" 
-						value={this.state.value} 
+						value={this.state.inputValue} 
 						onChange={this.handleChange} 
 						placeholder="Type answer here..." 
 					/>

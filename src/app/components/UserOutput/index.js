@@ -9,7 +9,7 @@ export const UserOutput = props => {
 	return (
 		<div className="user-output-holder">
 			<p className="text-container user-text">{props.text}</p>
-			<div className="user-output-header">
+			<div className="output-headers">
 				<JennaLogoSvg />
 			</div>
 		</div>

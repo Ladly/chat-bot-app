@@ -4,7 +4,7 @@
         padding-top: 10px;
     }
 
-    .output-header {
+    .output-headers {
         width: 13vw;
         height: 13vw;
         min-width: 13vw;
@@ -49,7 +49,7 @@
         padding-top: 15px;
     }
 
-    .output-header {
+    .output-headers {
         width: 6vw;
         height: 6vw;
         background: lightgray;
@@ -103,7 +103,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .output-header {
+    .output-headers {
         width: 4vw;
         height: 4vw;
     }
@@ -116,7 +116,7 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    .output-header {
+    .output-headers {
         width: 2vw;
         height: 2vw;
     }

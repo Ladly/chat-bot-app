@@ -17,7 +17,7 @@ export const BotOutput = (props) => {
 
 	return (
 		<div className="bot-output-holder">
-			<div className="output-header">
+			<div className="output-headers">
 				<Header pageHeader={false}/>
 			</div>
 			<div>

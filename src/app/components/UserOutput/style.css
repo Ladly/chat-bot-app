@@ -4,16 +4,6 @@
         justify-content: flex-end;
     }
 
-    .user-output-header {
-        width: 13vw;
-        height: 13vw;
-        background: lightgray;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .user-output-header > img {
         width: 37px;
     }
@@ -33,17 +23,7 @@
         justify-content: flex-end;
     }
 
-    .user-output-header {
-        width: 6vw;
-        height: 6vw;
-        background: lightgray;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .user-output-header > img {
+    .output-headers > img {
         width: 37px;
     }
 
@@ -53,9 +33,4 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .user-output-header {
-        width: 4vw;
-        height: 4vw;
-    }
-}
+/* output headers style is in bot output */
