@@ -28,6 +28,14 @@ class UserInput extends Component {
 		}
 	}
 
+	isInputEmpty = () => {
+		if(!this.state.inputValue) {
+			return alert('Enter some text')
+		} else {
+			return this.sendData()
+		}
+	}
+
 	render() {
 		return (
 			<div className="main-input-holder">
@@ -35,9 +43,16 @@ class UserInput extends Component {
 					<div className="input-group-prepend">
 						<span className="input-group-text border-primary bg-white"><PersistantActiveSvg /></span>
 					</div>
-					<input type="text" onKeyPress={this.handleKeyPress} className="form-control border-primary" value={this.state.value} onChange={this.handleChange} placeholder="Type answer here..." />
+					<input 
+						type="text" 
+						onKeyPress={this.handleKeyPress} 
+						className="form-control border-primary" 
+						value={this.state.value} 
+						onChange={this.handleChange} 
+						placeholder="Type answer here..." 
+					/>
 					<div className="input-group-append">
-						<span onClick={this.sendData} className="input-group-text bg-primary text-white border-primary">Send <span>&nbsp; &nbsp;</span> <PlaneSvg /></span>
+						<span onClick={this.isInputEmpty} className="input-group-text bg-primary text-white border-primary">Send <span>&nbsp; &nbsp;</span> <PlaneSvg /></span>
 					</div>
 				</div>
 			</div>
